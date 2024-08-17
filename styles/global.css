@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+
+
+  /* Produto */
+  --brand-color: #EF5F4C;
+
+  /* Shape */
+  --background-color: #FFFFFF;
+  --surface-color: #F5F5F5;
+  --skeleton-color: #D9D9D9;
+  --shape-transparency: hsla(0, 0%, 100%, 0.56);
+
+  /* Text */
+  --text-color-primary: #313131;
+  --text-color-secondary: #6C6C6C;
+
+  /* fonts */
+  --font-family-poppins: 'poppins', sans-serif;
+
+  --heading: 700 1.5rem/125% var(--font-family-poppins);
+  --paragraph-md: 400 0.875rem/170% var(--font-family-poppins);
+
+  --px-lg: 1rem;
+}
+
+
+@media (width >= 80em) {
+  :root {
+    --heading: 600 2rem/125% var(--font-family-poppins);
+
+    --px-lg: 2rem;
+  }
+  
+}

@@ -1,0 +1,22 @@
+main {
+  padding: 1rem;
+
+   & img {
+    width: 20.5rem;
+    height: 20.5rem;
+  }
+}
+
+@media (width >= 80em) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+
+    & img {
+      width: 17.875rem;
+      height: 17.875rem;
+    }
+  }
+}

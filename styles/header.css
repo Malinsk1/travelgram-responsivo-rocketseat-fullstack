@@ -1,0 +1,50 @@
+header {
+  --gap: 0.3rem;
+  padding-block: 1rem;
+
+  & nav {
+
+    margin-left: auto;
+    align-items: center;
+
+    line-height: 0;
+    
+
+    & ul {
+      list-style: none;
+
+      align-items: center;
+      gap: var(--gap);
+
+      & li a {
+        margin-block: auto;
+        text-decoration: none;
+        font: 400 16px/150% var(--font-family-poppins);
+        color: var(--text-color-secondary);
+      }
+
+      & li a:hover {
+        color: var(--brand-color);
+        text-decoration: underline;
+      }
+
+      & li:last-child a img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 2px;
+      }
+
+      & li a img {
+        margin-top: 7px;
+      }
+    }
+
+  }
+}
+
+@media (width >= 80em) {
+  header {
+    --gap: 1rem;
+    padding: 1.5rem 2rem;
+  }
+}
